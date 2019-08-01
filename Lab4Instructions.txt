@@ -1,0 +1,31 @@
+Lab 4 Queues
+
+1. Create your linked list Queue data type. 
+Your Queue needs to have a enqueue(), dequeue(), 
+and front() method. I have not forced you to 
+implement a Queue interface for this lab, 
+but nonetheless, your methods should follow 
+this naming convention.
+
+1.5. Determine the mean wait time of a stream of items entering your Queue(). Entering items will follow the following pattern:
+
+Add 1000 items. (N items)
+Add 999, remove 1.
+Add 998, remove 2.
+Etc.
+Add 0 remove 1000.
+
+Each item contains the value of currentTimeMillis() when it enters the Queue. When you dequeue() it, you can determine how long that item has been in the Queue.  
+
+Q0. What is the average wait time for the above Queue?
+
+Q1. Using O() notation, what is your average wait time as a function of N (use theoretical analysis only)?
+
+
+
+
+
+2. Use your Queue to simulate one of two situations involving lines:
+a. A four-way traffic intersection. Simulate the mean wait time for the intersection. Assume traffic is M times heavier from one road than the other. Compare a stop light approach (with a ratio of red-to-green of k and 1-k), with a stop sign approach where each car takes turns. You will need to estimate reasonable levels of traffic to enter into your simulation. If you have too little traffic, nothing matters. If you have too much traffic, people will wait forever. Assume traffic flows vary throughout the day – possibly according to a sin() function.
+
+b. Examine the “airplane bathroom problem”. An airplane has two bathrooms, women and men. Assume women and men use the facilities at the same rate for the same amount of time, although assume for everybody, people take a random amount of time varying from 2 minutes to 15 minutes. How does the average wait time compare for the following two bathroom systems: System 1. Normal operation. Both bathrooms are treated the same and people get in whichever line is shorter.  System 2. If you will take longer than X minutes, you wait for bathroom one. Otherwise, you get in line for bathroom 2.
