@@ -1,0 +1,13 @@
+COSC 2030 Lab 1
+Circular Data Structures
+Implement a Game of Duck-Duck-Goose
+
+Goal: Your program will simulate the behavior of a duck-duck goose game (this is the same as the “one-potato, two potatoes, three potatoes, four etc.” game). The user will enter the numbers of players as well as a fixed amount to skip before the next player is eliminated. If you skip 3, this will mean that you actually skip over 2 players and the third player is eliminated. The key to this lab is that you will use a circular data structure to represent the players.
+
+Step 0. Create a node class that represents a player. The class should contain the player’s name and a pointer to the player sitting to the player’s right.
+
+Step 1. Code a circular data structure with the user-entered number of players. Set the names of the players as “player1” “player2” etc. Hint: each player will be a node in your data structure.  Optional: Test the validity of your data structure by printing out the names of the players as you advance around the loop. Advance more times than the length of your loop to make sure the loop is correctly connected back to the beginning.
+
+Step 2. Simulate the playing of the game. When a player is eliminated, eliminate that node from your circular data structure by setting the appropriate pointers. Then proceed to keep eliminating players until one player remains. As the game progresses, print out the names of the players who have been eliminated (in the order they are eliminated). Also declare a winner.
+
+Step 3.  Remove any “debug only” code and place your files in the Lab 1 directory in the COSC 2030 directory.
