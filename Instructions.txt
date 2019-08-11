@@ -1,0 +1,13 @@
+Lab 2: RunTime -Experimental-
+
+Disclaimer: I know this math may feel like it belongs in a
+math course, but be patient, we’ll get to more fun stuff 
+soon.
+
+Step 1 (only step). 
+The class Stewart has been placed in the lab 2 directory. This class contains three methods each of which takes an input N. They are named method1(..), method2(..) and method3(..).
+Your job is to determine the runtime of each method as a function of N.
+
+You should write a tester class to collect some data. Use a graping tool like Excel to present some relevant graphs.
+
+Include in the comment section of your tester class an explanation as to why you have made your conclusion (include data as necessary).
